@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviesListFragment">
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.appmovies.ui.moviedetail.MovieDetailFragment"
+        android:label="@string/movie_detail_fragment_label"
+        tools:layout="@layout/fragment_movie_detail" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_favoriteListFragment"
+            app:destination="@id/favoriteListFragment" />
+        <argument
+            android:name="movie"
+            app:argType="com.example.appmovies.model.MovieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesListFragment"
+        android:name="com.example.appmovies.ui.movielist.MoviesListFragment"
+        android:label="@string/movies_list_fragment_label"
+        tools:layout="@layout/fragment_movies_list" >
+        <action
+            android:id="@+id/action_moviesListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.example.appmovies.ui.favoritelist.FavoriteListFragment"
+        android:label="@string/favorite_fragment_label">
+        <action
+            android:id="@+id/action_favoriteListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="margin_top_small">4dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin_top_medium">16dp</dimen>
+
+    <!-- elevation   -->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="elevation_card">8dp</dimen>
+
+    <!-- padding   -->
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="recycler_padding">12dp</dimen>
+
+    <!-- radius   -->
+    <dimen name="corner_radius_card">4dp</dimen>
+
+    <!-- text size   -->
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_body_2">14sp</dimen>
+    <dimen name="text_body_1">16sp</dimen>
+    <dimen name="text_body_4">18sp</dimen>
+    <dimen name="text_h6_headline">20sp</dimen>
+    <dimen name="text_h5_headline">24sp</dimen>
+
+    <!-- layout  sizes-->
+    <dimen name="layout_width_smallest">0dp</dimen>
+    <dimen name="layout_height_smallest">0dp</dimen>
+</resources>
